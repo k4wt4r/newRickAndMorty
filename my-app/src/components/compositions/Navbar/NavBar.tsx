@@ -1,5 +1,7 @@
 import { FC } from "react";
+import SearchBar from "../Search/SearchBar";
 import * as S from "./Navbar.style";
+const logo = require("./logo.png");
 
 type Props = {
   navElements?: Array<{
@@ -28,12 +30,9 @@ const navelts = [
 ];
 
 const Logo = () => (
-  <S.Logo>
-    <LogoImg
-      src="https://www.freepnglogos.com/uploads/rick-and-morty-png/list-rick-and-morty-episodes-wikipedia-24.png"
-      alt="Rick and Morty"
-    />
-  </S.Logo>
+  <S.LogoContainer>
+    <S.LogoImg src={logo} alt="Rick And Morty" />
+  </S.LogoContainer>
 );
 
 const renderNavElements = () => {
@@ -44,7 +43,8 @@ const NavBar: FC<Props> = ({ navElements }) => {
   return (
     <S.StyledNavBar>
       <Logo />
-      {renderNavElements()}
+      <S.NavBarElementConatiner>{renderNavElements()}</S.NavBarElementConatiner>
+      <SearchBar isOpen={true} />
     </S.StyledNavBar>
   );
 };
