@@ -31,7 +31,6 @@ export const StyledPagination = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 20px;
 `;
 
@@ -39,19 +38,28 @@ export const StyledButtonNext = styled.button`
   background-color: #1b1d24;
   color: #fffefe;
   border: 1px solid #c9c9c9;
-  width: 90px;
-  height: 30px;
+  width: 100px;
+  height: 35px;
   font-size: 16px;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const StylesButtonPrevious = styled.button`
   background-color: #1b1d24;
   color: #fffefe;
   border: 1px solid #c9c9c9;
-  width: 90px;
-  height: 30px;
+  width: 100px;
+  height: 35px;
   font-size: 16px;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const StyledPageNumber = styled.div`
