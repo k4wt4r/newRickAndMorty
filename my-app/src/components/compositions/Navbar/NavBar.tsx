@@ -42,9 +42,13 @@ const renderNavElements = () => {
 const NavBar: FC<Props> = ({ navElements }) => {
   return (
     <S.StyledNavBar>
-      <Logo />
-      <S.NavBarElementConatiner>{renderNavElements()}</S.NavBarElementConatiner>
-      <SearchBar isOpen={true} />
+      <S.StyledContainer>
+        <Logo />
+        <S.NavBarElementConatiner>
+          {renderNavElements()}
+        </S.NavBarElementConatiner>
+        <SearchBar />
+      </S.StyledContainer>
     </S.StyledNavBar>
   );
 };

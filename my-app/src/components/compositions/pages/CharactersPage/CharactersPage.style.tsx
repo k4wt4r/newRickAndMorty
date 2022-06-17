@@ -14,8 +14,8 @@ export const StyledContainer = styled.div`
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 18px;
 `;
 
 export const StyledCardCharacters = styled.div`
@@ -25,10 +25,14 @@ export const StyledCardCharacters = styled.div`
 `;
 
 export const StyledPagination = styled.div`
-  width: 200px;
-  height: 20px;
+  width: 380px;
+  height: 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: rgba(215, 204, 204, 0.16);
+  border-radius: 40px;
+  padding: 20px;
 `;
 
 export const StyledButtonNext = styled.button`
@@ -48,4 +52,15 @@ export const StylesButtonPrevious = styled.button`
   height: 30px;
   font-size: 16px;
   font-weight: 300;
+`;
+
+export const StyledPageNumber = styled.div`
+  background-color: #fff;
+  color: #1b1d24;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

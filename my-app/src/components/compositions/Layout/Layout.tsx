@@ -1,7 +1,8 @@
-import NavBar from "@/components/compositions/Navbar/NavBar";
-import Header from "@/components/compositions/Header/Header";
-import CharactersHeaderContent from "@/components/compositions/pages/CharactersPage/HeaderContent/CharactersHeaderContent";
+import CharactersHeaderContent from "../pages/HeaderContent/CharactersHeaderContent";
 import { FC } from "react";
+import Header from "../Header/Header";
+import NavBar from "../Navbar/NavBar";
+import CardsContainer from "../CardsContainer/CardsContainer";
 
 type Props = {
   children?: React.ReactNode;

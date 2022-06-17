@@ -5,9 +5,17 @@ export const StyledNavBar = styled.nav`
   width: 100vw;
   background-color: #14161c;
   display: flex;
+  justify-content: center;
+`;
+
+export const StyledContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
 `;
 
 export const NavBarElementConatiner = styled.div`
@@ -15,7 +23,7 @@ export const NavBarElementConatiner = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 20%;
+  width: 400px;
   height: 100%;
   color: white;
 `;

@@ -1,41 +1,52 @@
 import styled from "styled-components";
 
 export const SearchContainer = styled.div`
+  background-color: blueviolet;
   position: relative;
   color: white;
-  margin-right: 18px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: 120px;
 `;
 
 export const SearchInput = styled.input`
-  border: 1px solid white;
   position: absolute;
-  z-index: 10;
   background-color: transparent;
-  height: 30px;
-  width: 360px;
-  border-radius: 5px;
-  top: 0%;
-  bottom: 2%;
-  right: 100%;
-  opacity: 0;
-`;
-
-export const SearchIcon = styled.div`
-  margin-right: 12px;
-  width: 31px;
-  height: 31px;
+  width: 400px;
+  height: 36px;
+  top: 2;
+  right: 0;
+  outline: 0;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: #ffffff;
+  border-radius: 30px;
+`;
+
+export const SearchIcon = styled.button`
+  position: absolute;
+  right: 0;
+  left: 90px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141313;
   background-color: #ffffff;
-  border-radius: 2px;
+  border-radius: 50%;
 
   &:hover {
-    background-color: #362e2e;
-    color: #ffffff;
-    border-radius: 50%;
     cursor: pointer;
   }
+`;
+
+export const SearchBarInput = styled.div`
+  background-color: transparent;
+  position: relative;
+  width: 76%;
+  height: 100%;
+  border: none;
 `;

@@ -1,27 +1,21 @@
 import { ICharacter } from "@/src/interfaces";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CardCharacters from "../../Card/CardCharacters";
+import useFetch from "../../hooks/useFetch";
 import * as S from "./CharactersPage.style";
-import { IoIosArrowBack } from "react-icons/io";
 
 const CharactersPage = () => {
-  const [characters, setCharacters] = useState<ICharacter[]>([]);
   const [page, setPage] = useState(1);
-  let api = `https://rickandmortyapi.com/api/character/?page=${page}`;
-
-  useEffect(() => {
-    (async () => {
-      const response = await fetch(api);
-      const data = await response.json();
-      setCharacters(data.results);
-    })();
-  }, [api]);
+  const characters = useFetch<ICharacter>(
+    `https://rickandmortyapi.com/api/character/?page=${page}`
+  );
+  console.log(characters);
 
   return (
     <>
       <S.StyledCharactersContainer>
         <S.StyledContainer>
-          {characters.map((character, id) => (
+          {characters.data.map((character, id) => (
             <S.StyledCardCharacters key={id}>
               <CardCharacters character={character} />
             </S.StyledCardCharacters>
@@ -29,10 +23,9 @@ const CharactersPage = () => {
         </S.StyledContainer>
         <S.StyledPagination>
           <S.StylesButtonPrevious onClick={() => setPage(page - 1)}>
-            <IoIosArrowBack />
             PREV
           </S.StylesButtonPrevious>
-          <div>{page}</div>
+          <S.StyledPageNumber>{page}</S.StyledPageNumber>
           <S.StyledButtonNext onClick={() => setPage(page + 1)}>
             NEXT
           </S.StyledButtonNext>

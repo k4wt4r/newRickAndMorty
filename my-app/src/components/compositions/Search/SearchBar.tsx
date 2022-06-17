@@ -1,19 +1,20 @@
 import * as S from "./SearchBar.style";
 import { GoSearch } from "react-icons/go";
-import { FC } from "react";
-//mport { useState } from "react";
+import { useState, FC } from "react";
 
-type props = {
-  isOpen?: boolean;
-};
+const SearchBar: FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-const SearchBar: FC<props> = ({ isOpen = false }) => {
+  const toggleSearch = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <S.SearchContainer>
-      <S.SearchIcon>
+      {isOpen && <S.SearchInput placeholder="Search" type="text" />}
+      <S.SearchIcon onClick={() => toggleSearch()}>
         <GoSearch />
       </S.SearchIcon>
-      <S.SearchInput placeholder="Search" type="text" />
     </S.SearchContainer>
   );
 };
