@@ -25,7 +25,7 @@ const CharactersPage = () => {
           <S.StylesButtonPrevious onClick={() => setPage(page - 1)}>
             PREV
           </S.StylesButtonPrevious>
-          <S.StyledPageNumber>{page}</S.StyledPageNumber>
+          {/* <S.StyledPageNumber>{page}</S.StyledPageNumber> */}
           <S.StyledButtonNext onClick={() => setPage(page + 1)}>
             NEXT
           </S.StyledButtonNext>

@@ -1,10 +1,10 @@
-import { ICharacterLocation } from "@/src/interfaces";
+import { ILocation } from "@/src/interfaces";
 import React, { useState, useEffect } from "react";
 
 type Props = {};
 
 const LocationsPage = (props: Props) => {
-  const [locations, setLocations] = useState<ICharacterLocation[]>([]);
+  const [locations, setLocations] = useState<ILocation[]>([]);
 
   useEffect(() => {
     (async () => {
@@ -14,13 +14,7 @@ const LocationsPage = (props: Props) => {
     })();
   }, []);
 
-  return (
-    <div>
-      {locations.map((location, id) => (
-        <div key={id}>{location.name}</div>
-      ))}
-    </div>
-  );
+  return <div></div>;
 };
 
 export default LocationsPage;

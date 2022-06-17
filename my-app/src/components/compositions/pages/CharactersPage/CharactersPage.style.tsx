@@ -25,13 +25,13 @@ export const StyledCardCharacters = styled.div`
 `;
 
 export const StyledPagination = styled.div`
-  width: 380px;
+  margin-top: 40px;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(215, 204, 204, 0.16);
-  border-radius: 40px;
+
   padding: 20px;
 `;
 

@@ -20,5 +20,21 @@ export interface ICharacter {
 }
 
 export interface ILocation{
-    
+    id: number;
+    name: string;
+    type: string;
+    dimension: string;
+    residents: Array<string>;
+    url: string;
+    created: string;
+}
+
+export interface IEpisode{
+    id: number;
+    name: string;
+    air_date: string;
+    episode: string;
+    characters: Array<string>;
+    url: string;
+    created: string;
 }

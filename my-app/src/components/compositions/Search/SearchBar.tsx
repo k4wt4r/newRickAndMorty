@@ -4,6 +4,11 @@ import { useState, FC } from "react";
 
 const SearchBar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [searchValue, setSearchValue] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(e.target.value);
+  };
 
   const toggleSearch = () => {
     setIsOpen(!isOpen);
@@ -11,7 +16,14 @@ const SearchBar: FC = () => {
 
   return (
     <S.SearchContainer>
-      {isOpen && <S.SearchInput placeholder="Search" type="text" />}
+      {isOpen && (
+        <S.SearchInput
+          placeholder="Search"
+          type="text"
+          value={searchValue}
+          onChange={handleChange}
+        />
+      )}
       <S.SearchIcon onClick={() => toggleSearch()}>
         <GoSearch />
       </S.SearchIcon>
