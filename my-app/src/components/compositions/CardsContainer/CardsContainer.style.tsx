@@ -12,6 +12,7 @@ export const StyledCardsContainer = styled.div`
 export const StyledCardsContainerInner = styled.div`
   width: 80%;
   height: 100%;
+  margin-bottom: 80px;
   background-color: #25292e;
   border-radius: 30px;
   display: flex;

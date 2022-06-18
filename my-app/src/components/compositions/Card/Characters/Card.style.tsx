@@ -20,7 +20,7 @@ export const StyledCard = styled.div`
   position: relative;
   width: 100%;
   display: flex;
-  height: 360px;
+  height: 400px;
   justify-content: center;
   align-items: center;
 

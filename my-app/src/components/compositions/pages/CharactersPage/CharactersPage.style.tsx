@@ -45,6 +45,10 @@ export const StyledButtonNext = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 export const StylesButtonPrevious = styled.button`
   background-color: #1b1d24;

@@ -1,8 +1,8 @@
-import CharactersHeaderContent from "../pages/HeaderContent/CharactersHeaderContent";
 import { FC } from "react";
 import Header from "../Header/Header";
 import NavBar from "../Navbar/NavBar";
-import CardsContainer from "../CardsContainer/CardsContainer";
+import LocationsHeaderContent from "../HeaderContent/LocationsContent/LocationsHeaderContent";
+import LocationsPage from "../pages/Locations/LocationsPage";
 
 type Props = {
   children?: React.ReactNode;
@@ -14,9 +14,9 @@ const Layout: FC<Props> = ({ children }) => {
       <NavBar />
       <Header
         imgSrc="/images/rickAmorty.png"
-        HeaderContent={CharactersHeaderContent}
+        HeaderContent={LocationsHeaderContent}
       />
-      {children}
+      <main>{children}</main>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { ICharacter } from "@/src/interfaces";
 import { FC } from "react";
-import Gender from "../pages/CharactersPage/CharactersInfo/Gender/Gender";
-import Status from "../pages/CharactersPage/CharactersInfo/Status/Status";
+import Gender from "../../pages/CharactersPage/CharactersInfo/Gender/Gender";
+import Status from "../../pages/CharactersPage/CharactersInfo/Status/Status";
 import * as S from "./Card.style";
 
 interface Props {

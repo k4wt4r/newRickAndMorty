@@ -1,10 +1,10 @@
 import { FC } from "react";
-import * as S from "./CharactersHeaderContent.style";
+import * as S from "../CharactersHeaderContent.style";
 
-const HeaderContent: FC = () => {
+function LocationsHeaderContent() {
   return (
     <S.StyledHeaderText>
-      <S.StyleTitle>Characters</S.StyleTitle>
+      <S.StyleTitle>Locations</S.StyleTitle>
       <S.StyledHeaderParag>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -12,6 +12,6 @@ const HeaderContent: FC = () => {
       </S.StyledHeaderParag>
     </S.StyledHeaderText>
   );
-};
+}
 
-export default HeaderContent;
+export default LocationsHeaderContent;
