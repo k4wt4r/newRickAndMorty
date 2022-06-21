@@ -16,6 +16,7 @@ const CardLocations: FC<IProps> = ({ location }) => {
             <S.StyledDescription>
               <S.StyledType>{location.type}</S.StyledType>
               <S.StyledDimensions>{location.dimension}</S.StyledDimensions>
+              <S.StyledCreated>{location.created}</S.StyledCreated>
             </S.StyledDescription>
           </S.StyledContainer>
         </S.StyledCard>

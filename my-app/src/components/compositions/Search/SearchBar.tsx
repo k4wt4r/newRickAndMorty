@@ -2,6 +2,8 @@ import * as S from "./SearchBar.style";
 import { GoSearch } from "react-icons/go";
 import { useState, FC } from "react";
 
+
+
 const SearchBar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [searchValue, setSearchValue] = useState<string>("");

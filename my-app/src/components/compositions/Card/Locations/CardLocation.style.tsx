@@ -25,17 +25,19 @@ export const StyledContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 `;
 
 export const StyledName = styled.h3`
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin: 0;
 `;
 
-export const StyledDescription = styled.p``;
+export const StyledDescription = styled.p`
+  color: #fff;
+  font-size: 14px;
+`;
 
 export const StyledType = styled.p`
   color: #fff;
@@ -44,3 +46,13 @@ export const StyledType = styled.p`
 export const StyledDimensions = styled.p`
   background-color: #564444;
 `;
+
+export const StyledCreated = styled.p`
+  color: #fff;
+  font-size: 14px;
+`;
+
+// export const StyledImg = styled.img`
+//   width: 100%;
+//   object-fit: cover;
+// `;

@@ -5,8 +5,8 @@ import LocationsContainer from "./components/compositions/CardsContainer/Locatio
 function App() {
   return (
     <div className="App">
-      <LocationsContainer />
-      {/* <CharactersContainer /> */}
+      {/* <LocationsContainer /> */}
+      <CharactersContainer />
     </div>
   );
 }
