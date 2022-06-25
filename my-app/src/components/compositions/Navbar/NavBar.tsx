@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SearchBar from "../Search/SearchBar";
+import DarkMode from "../Search/DarkMode";
 import * as S from "./Navbar.style";
 const logo = require("./logo.png");
 
@@ -47,7 +47,9 @@ const NavBar: FC<Props> = ({ navElements }) => {
         <S.NavBarElementConatiner>
           {renderNavElements()}
         </S.NavBarElementConatiner>
-        <SearchBar />
+        <S.StyledContainerLight>
+          <DarkMode />
+        </S.StyledContainerLight>
       </S.StyledContainer>
     </S.StyledNavBar>
   );

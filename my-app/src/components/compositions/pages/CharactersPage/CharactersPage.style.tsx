@@ -15,7 +15,7 @@ export const StyledContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 18px;
+  gap: 24px;
 `;
 
 export const StyledCardCharacters = styled.div`
@@ -75,4 +75,68 @@ export const StyledPageNumber = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const Container = styled.div`
+  width: 94%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 60px;
+`;
+
+export const SearchContainer = styled.div`
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  width: 120px;
+  height: 60px;
+`;
+
+export const SearchInput = styled.input`
+  position: absolute;
+  background-color: transparent;
+  width: 400px;
+  height: 42px;
+  top: 2;
+  right: 0;
+  outline: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 30px;
+
+  &:focus {
+    outline: 0;
+  }
+`;
+
+export const SearchIcon = styled.button`
+  position: absolute;
+  right: 0;
+  left: 90px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141313;
+  font-size: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const SearchBarInput = styled.div`
+  background-color: transparent;
+  position: relative;
+  width: 76%;
+  height: 100%;
+  border: none;
 `;

@@ -2,7 +2,6 @@ import { FC } from "react";
 import Header from "../Header/Header";
 import NavBar from "../Navbar/NavBar";
 import LocationsHeaderContent from "../HeaderContent/LocationsContent/LocationsHeaderContent";
-import LocationsPage from "../pages/Locations/LocationsPage";
 
 type Props = {
   children?: React.ReactNode;

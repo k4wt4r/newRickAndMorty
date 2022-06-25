@@ -5,6 +5,7 @@ const useFetch = <T,>(api: string) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<any>();
 
+
   useEffect(() => {
     const getApiData = async () => {
       setLoading(true);
