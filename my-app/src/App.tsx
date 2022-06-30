@@ -5,9 +5,9 @@ import EpisodesContainer from "./components/compositions/CardsContainer/Episodes
 function App() {
   return (
     <div className="App">
-      {/* <LocationsContainer /> */}
+      <LocationsContainer />
       {/* <CharactersContainer /> */}
-      <EpisodesContainer />
+      {/* <EpisodesContainer /> */}
     </div>
   );
 }

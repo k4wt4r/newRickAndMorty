@@ -14,13 +14,13 @@ export const StyledContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 24px;
   padding: 40px;
 `;
 
 export const StyledCardsContainer = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
   border-radius: 30px;
   background: #1b1d23;
   border-radius: 16px;
@@ -30,6 +30,7 @@ export const StyledCardsContainer = styled.div`
   border: 1px solid rgba(255, 253, 253, 0.23);
   &:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 `;
 
