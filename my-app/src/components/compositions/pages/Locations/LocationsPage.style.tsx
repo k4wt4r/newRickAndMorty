@@ -20,7 +20,7 @@ export const StyledContainer = styled.div`
 
 export const StyledCardsContainer = styled.div`
   width: 340px;
-  height: 340px;
+  height: 320px;
   border-radius: 30px;
   background: #1b1d23;
   border-radius: 16px;

@@ -32,8 +32,11 @@ const LocationsPage = (props: Props) => {
             <HiOutlineArrowSmLeft />
             PREV
           </S.StylesButtonPrevious>
-          <S.StyledPageNumber>{page}</S.StyledPageNumber>
-          <S.StyledButtonNext onClick={() => setPage(page + 1)}>
+          {/* <S.StyledPageNumber>{page}</S.StyledPageNumber> */}
+          <S.StyledButtonNext
+            onClick={() => setPage(page + 1)}
+            disabled={page === 7}
+          >
             NEXT
             <HiOutlineArrowSmRight />
           </S.StyledButtonNext>

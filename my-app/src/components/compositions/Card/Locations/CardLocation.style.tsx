@@ -58,6 +58,8 @@ export const StyledDimensions = styled.p`
 export const StyledCreated = styled.p`
   color: #fff;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 `;
 
 export const StyledBgImage = styled.img`

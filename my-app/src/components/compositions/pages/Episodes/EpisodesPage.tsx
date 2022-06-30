@@ -31,14 +31,14 @@ const EpisodesPage = (props: Props) => {
         ))}
       </S.StyledEpisodesContainerInner>
       <S.StyledPagination>
-        <S.StylesButtonPrevious onClick={prevPage} disabled={page === 1}>
+        <S.StyledButton onClick={prevPage} disabled={page === 1}>
           <HiOutlineArrowSmLeft />
           PREV
-        </S.StylesButtonPrevious>
-        <S.StyledButtonNext onClick={nextPage} disabled={page === 3}>
+        </S.StyledButton>
+        <S.StyledButton onClick={nextPage} disabled={page === 3}>
           NEXT
           <HiOutlineArrowSmRight />
-        </S.StyledButtonNext>
+        </S.StyledButton>
       </S.StyledPagination>
     </S.StyledEpisodesContainer>
   );

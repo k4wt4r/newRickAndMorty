@@ -5,9 +5,9 @@ const logo = require("./logo.png");
 
 type Props = {
   navElements?: Array<{
-    text: string;
-    link: string;
-    active: boolean;
+    text?: string;
+    link?: string;
+    active?: boolean;
   }>;
 };
 
@@ -19,12 +19,12 @@ const navelts = [
   },
   {
     text: "Episodes",
-    link: "/episodes",
+    link: "/episode",
     active: false,
   },
   {
     text: "Locations",
-    link: "/locations",
+    link: "/location",
     active: false,
   },
 ];
@@ -36,7 +36,9 @@ const Logo = () => (
 );
 
 const renderNavElements = () => {
-  return navelts.map((element) => <S.NavElement>{element.text}</S.NavElement>);
+  return navelts.map((navElement, index) => {
+    return <S.NavElement key={index}>{navElement.text}</S.NavElement>;
+  });
 };
 
 const NavBar: FC<Props> = ({ navElements }) => {

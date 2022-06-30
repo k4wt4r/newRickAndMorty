@@ -47,8 +47,8 @@ export const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(1px);
-  opacity: 0.8;
+  filter: blur(0.5px);
+  opacity: 0.6;
   border-radius: 30px;
   background-position: left;
 `;
