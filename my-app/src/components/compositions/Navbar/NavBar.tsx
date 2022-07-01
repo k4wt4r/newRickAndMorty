@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 import { FC } from "react";
 import DarkMode from "../Search/DarkMode";
 import * as S from "./Navbar.style";
+import { text } from "stream/consumers";
 const logo = require("./logo.png");
 
 type Props = {
@@ -15,7 +18,7 @@ const navelts = [
   {
     text: "Characters",
     link: "/",
-    active: true,
+    active: false,
   },
   {
     text: "Episodes",
@@ -37,7 +40,16 @@ const Logo = () => (
 
 const renderNavElements = () => {
   return navelts.map((navElement, index) => {
-    return <S.NavElement key={index}>{navElement.text}</S.NavElement>;
+    return (
+      <S.NavElement key={index}>
+        <NavLink
+          to={navElement.link}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          {navElement.text}
+        </NavLink>
+      </S.NavElement>
+    );
   });
 };
 

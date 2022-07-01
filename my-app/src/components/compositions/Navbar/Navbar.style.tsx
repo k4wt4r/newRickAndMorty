@@ -34,6 +34,7 @@ export const NavElement = styled.div`
   display: flex;
   align-items: center;
   color: white;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
