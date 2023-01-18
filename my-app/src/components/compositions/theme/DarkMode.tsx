@@ -23,7 +23,7 @@ export const ThemeProvider= (
         setTheme(theme === 'dark' ? 'light' : 'dark');
     };
      const color = theme === "light" ? "#333" : "#FFF";
-  const backgroundColor = theme === "light" ? "#FFF" : "#333";
+  const backgroundColor = theme === "light" ? "#FFF" : "";
 
   document.body.style.color = color;
   document.body.style.backgroundColor = backgroundColor;
