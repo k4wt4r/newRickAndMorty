@@ -1,6 +1,7 @@
 import { FC } from "react";
-import DarkMode from "../Search/DarkMode";
+import { useTheme } from '../theme/DarkMode';
 import * as S from "./Navbar.style";
+import {MdOutlineLightMode} from "react-icons/md"
 const logo = require("./logo.png");
 
 type Props = {
@@ -57,6 +58,9 @@ const renderNavElements = () => {
 };
 
 const NavBar: FC<Props> = ({ navElements }) => {
+  const { theme, toggleTheme } = useTheme();
+
+ 
 
 
   return (
@@ -67,7 +71,14 @@ const NavBar: FC<Props> = ({ navElements }) => {
           {renderNavElements()}
         </S.NavBarElementConatiner>
         <S.StyledContainerLight>
-          <DarkMode />
+          <MdOutlineLightMode
+            onClick={toggleTheme}
+            style={{ border: "none", cursor: "pointer", color: "#FFFFFF" }}
+          >
+            {theme === "Light" ? "Dark" : "Light"}
+          </MdOutlineLightMode>
+
+           
         </S.StyledContainerLight>
       </S.StyledContainer>
     </S.StyledNavBar>

@@ -3,9 +3,12 @@ import CharactersContainer from "./components/compositions/CardsContainer/Charac
 import LocationsContainer from "./components/compositions/CardsContainer/LocationsContainer";
 import EpisodesContainer from "./components/compositions/CardsContainer/EpisodesContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./components/compositions/theme/DarkMode"
+
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider>
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CharactersContainer />} />
@@ -13,7 +16,8 @@ function App() {
           <Route path="location" element={<LocationsContainer />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </ThemeProvider>
+    
   );
 }
 
