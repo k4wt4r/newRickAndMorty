@@ -5,9 +5,7 @@ function LocationsHeaderContent() {
     <S.StyledHeaderText>
       <S.StyleTitle>Locations</S.StyleTitle>
       <S.StyledHeaderParag>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation
+       Explore the weird and wild locations from the hit show Rick and Morty. From the Smith family's backyard to the multiverse, discover the places that have shaped the adventures of the eccentric scientist and his grandson.
       </S.StyledHeaderParag>
     </S.StyledHeaderText>
   );

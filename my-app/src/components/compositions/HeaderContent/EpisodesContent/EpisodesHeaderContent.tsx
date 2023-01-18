@@ -5,9 +5,7 @@ function LocationsHeaderContent() {
     <S.StyledHeaderText>
       <S.StyleTitle>Episodes</S.StyleTitle>
       <S.StyledHeaderParag>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation
+Rick and Morty is a critically acclaimed animated show that follows the adventures of an eccentric and alcoholic scientist named Rick Sanchez and his good-hearted but easily influenced grandson Morty Smith.     
       </S.StyledHeaderParag>
     </S.StyledHeaderText>
   );

@@ -6,9 +6,8 @@ const HeaderContent: FC = () => {
     <S.StyledHeaderText>
       <S.StyleTitle>Characters</S.StyleTitle>
       <S.StyledHeaderParag>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation
+Rick and Morty is a popular animated series that follows the adventures of an eccentric scientist named Rick and his timid grandson Morty.
+ Together, they travel to different dimensions and encounter strange and often dangerous creatures. The show is known for its dark humor, satirical commentary, and mind-bending plot twists. It's a must-watch for fans of science fiction and adult animation.
       </S.StyledHeaderParag>
     </S.StyledHeaderText>
   );

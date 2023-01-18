@@ -17,15 +17,15 @@ export const StyledHeaderText = styled.div`
 `;
 
 export const StyleTitle = styled.h1`
-  font-size: 50px;
+  font-size: 52px;
   font-weight: bold;
   color: #ffffff;
 `;
 
 export const StyledHeaderParag = styled.p`
   padding-top: 8px;
-  font-size: 16px;
-  color: #9f9e9e;
+  font-size: 15px;
+  color: #bcbcbc;
   font-weight: 400;
 `;
 
