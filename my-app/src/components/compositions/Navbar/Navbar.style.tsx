@@ -59,3 +59,17 @@ export const LogoImg = styled.img`
 `;
 
 export const StyledContainerLight = styled.div``;
+
+
+export const StyledNavLink = styled.a`
+
+  color: white;
+  text-decoration: none;
+
+ &.active {
+    
+    color: #0ff;
+
+  }
+  
+`

@@ -1,4 +1,3 @@
-import { FC } from "react";
 import * as S from "../CharactersHeaderContent.style";
 
 function LocationsHeaderContent() {
