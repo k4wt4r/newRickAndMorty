@@ -8,18 +8,28 @@ export const StyledHeaderTextAndImage = styled.div`
 `;
 
 export const StyledHeaderText = styled.div`
-  max-width: 40%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 100px;
+
+  @media (max-width: 990px) {
+    max-width: 100%;
+    padding: 20px;
+
+  }
 `;
 
 export const StyleTitle = styled.h1`
   font-size: 52px;
   font-weight: bold;
   color: #ffffff;
+
+  @media (max-width: 990px) {
+    font-size: 32px;
+  }
 `;
 
 export const StyledHeaderParag = styled.p`
@@ -27,6 +37,10 @@ export const StyledHeaderParag = styled.p`
   font-size: 15px;
   color: #bcbcbc;
   font-weight: 400;
+
+  @media (max-width: 990px) {
+    font-size: 12px;
+  }
 `;
 
 export const StyledHeaderImage = styled.img`

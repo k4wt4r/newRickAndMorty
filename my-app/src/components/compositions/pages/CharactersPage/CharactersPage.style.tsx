@@ -8,6 +8,12 @@ export const StyledCharactersContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 40px;
+
+  @media (max-width: 990px) {
+    padding: 8px;
+    /* height: auto; */
+    padding: 10px;
+  }
 `;
 
 export const StyledContainer = styled.div`
@@ -16,6 +22,12 @@ export const StyledContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
+
+  @media (max-width: 990px) {
+    grid-template-columns: 1fr ;
+
+ 
+  }
 `;
 
 export const StyledCardCharacters = styled.div`
@@ -78,11 +90,22 @@ export const StyledPageNumber = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 94%;
+  width: 96%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   height: 60px;
+
+  position: relative;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+  }
+ 
 `;
 
 export const SearchContainer = styled.div`
@@ -92,13 +115,19 @@ export const SearchContainer = styled.div`
   align-items: flex-end;
   width: 120px;
   height: 60px;
+
+  @media (max-width: 990px) {
+    width: 96%;;
+    align-items: flex-start;
+  }
+
 `;
 
 export const SearchInput = styled.input`
   position: absolute;
   background-color: transparent;
   width: 400px;
-  height: 42px;
+  height: 50px;
   top: 2;
   right: 0;
   outline: 0;
@@ -108,6 +137,17 @@ export const SearchInput = styled.input`
   justify-content: center;
   color: #ffffff;
   border-radius: 30px;
+  border: 0.5px solid #ffffff;
+
+
+  @media (max-width: 990px) {
+    width: 100%;
+    left: 0;
+    right: 0;  
+    align-items: center;
+    justify-content: center;
+    text-indent: 36px;
+  }
 
   &:focus {
     outline: 0;
@@ -116,10 +156,11 @@ export const SearchInput = styled.input`
 
 export const SearchIcon = styled.button`
   position: absolute;
-  right: 0;
-  left: 90px;
-  width: 44px;
-  height: 44px;
+  right: 10;
+  bottom: 0;
+  border: 0.5px solid #ffffff;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,9 +168,14 @@ export const SearchIcon = styled.button`
   font-size: 18px;
   background-color: #ffffff;
   border-radius: 50%;
+  z-index: 100;
+  cursor: pointer;
 
-  &:hover {
-    cursor: pointer;
+  @media (max-width: 990px) {
+    left: 0;
+    bottom: 0;
+    top: 0;
+   
   }
 `;
 
@@ -139,4 +185,18 @@ export const SearchBarInput = styled.div`
   width: 76%;
   height: 100%;
   border: none;
+
+  @media (max-width: 990px) {
+   
+  }
 `;
+
+export const StyledCardsContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  @media (max-width: 990px) {
+    width: 100%;
+    /* height: 100%; */
+  }
+`

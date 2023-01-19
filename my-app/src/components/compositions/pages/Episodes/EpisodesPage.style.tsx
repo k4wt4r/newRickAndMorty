@@ -6,6 +6,7 @@ export const StyledEpisodesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 `;
 
 export const StyledEpisodesContainerInner = styled.div`
@@ -14,6 +15,12 @@ export const StyledEpisodesContainerInner = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 22px;
+
+   @media (max-width: 990px) {
+    grid-template-columns: 1fr ;
+
+ 
+  }
 `;
 
 export const StyledEpisodes = styled.div`
@@ -23,11 +30,17 @@ export const StyledEpisodes = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
   }
+
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+
 `;
 
 export const StyledPagination = styled.div`

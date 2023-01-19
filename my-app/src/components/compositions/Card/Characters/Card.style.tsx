@@ -13,7 +13,13 @@ export const StyledContainer = styled.div`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13.3px);
   -webkit-backdrop-filter: blur(13.3px);
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  border: 0.5px solid rgba(248, 248, 248, 0.38);
+
+  @media (max-width: 990px) {
+    
+    height: 100%;
+   
+  }
 `;
 
 export const StyledCard = styled.div`
@@ -23,10 +29,15 @@ export const StyledCard = styled.div`
   height: 400px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 990px) {
+    height: 360px;
+    width: 100%;}
 `;
 
 export const StyledImage = styled.img`

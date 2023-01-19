@@ -19,6 +19,11 @@ export const StyledHeaderSection = styled.div`
   justify-content: center;
   margin: 44px 0px;
   position: relative;
+
+  @media (max-width: 990px) {
+    min-height: 100%;
+    margin: 20px 0;
+  }
 `;
 
 export const StyledHeaderTextAndImage = styled.div`
@@ -26,6 +31,11 @@ export const StyledHeaderTextAndImage = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const StyledHeaderSectionContainer = styled.div`
@@ -46,6 +56,10 @@ export const StyledHeaderSectionContainer = styled.div`
     box-shadow: 1px 0px 18px 2px #0ff;
     animation: ${flicker} 3s linear infinite;
   }
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledHeaderImage = styled.img`
@@ -56,4 +70,8 @@ export const StyledHeaderImage = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
+
+  @media (max-width: 990px) {
+    width: 60%;
+  }
 `;

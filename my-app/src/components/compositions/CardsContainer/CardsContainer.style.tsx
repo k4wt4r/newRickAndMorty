@@ -19,4 +19,9 @@ export const StyledCardsContainerInner = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+
+  @media (max-width: 990px) {
+    width: 90%;
+    margin-bottom: 0;
+  }
 `;

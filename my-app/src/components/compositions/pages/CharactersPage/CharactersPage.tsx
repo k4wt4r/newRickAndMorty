@@ -25,20 +25,20 @@ const CharactersPage = () => {
   );
 
   return (
-    <>
-      <S.Container>
+    <S.StyledCardsContainer>
+      <S.Container> <S.SearchIcon onClick={() => toggleSearch()}>
+            <GoSearch />
+          </S.SearchIcon>
         <S.SearchContainer>
           {isOpen && (
             <S.SearchInput
-              placeholder="Search"
+              placeholder="Search by name"
               type="text"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
             />
           )}
-          <S.SearchIcon onClick={() => toggleSearch()}>
-            <GoSearch />
-          </S.SearchIcon>
+         
         </S.SearchContainer>
       </S.Container>
       <S.StyledCharactersContainer>
@@ -64,7 +64,7 @@ const CharactersPage = () => {
           </S.StyledButtonNext>
         </S.StyledPagination>
       </S.StyledCharactersContainer>
-    </>
+    </S.StyledCardsContainer>
   );
 };
 
