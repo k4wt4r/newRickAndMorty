@@ -16,6 +16,11 @@ export const StyledContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
   padding: 40px;
+
+  @media (max-width: 990px) {
+    grid-template-columns: 1fr;
+    padding: 8px;
+  }
 `;
 
 export const StyledCardsContainer = styled.div`
@@ -31,6 +36,11 @@ export const StyledCardsContainer = styled.div`
   &:hover {
     transform: scale(1.1);
     cursor: pointer;
+  }
+
+  @media (max-width: 990px) {
+    width: 100%;
+    height: 100%;
   }
 `;
 

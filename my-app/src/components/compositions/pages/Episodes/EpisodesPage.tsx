@@ -25,7 +25,7 @@ const EpisodesPage = () => {
   const toggleSearch = () => {
     setIsOpen(!isOpen);
   };
-  
+
   function prevPage() {
     setPage(page - 1);
   }
