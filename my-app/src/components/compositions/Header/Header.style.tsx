@@ -12,7 +12,7 @@ const flicker = keyframes`
 `;
 
 export const StyledHeaderSection = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 350px;
   display: flex;
   align-items: center;
@@ -22,12 +22,14 @@ export const StyledHeaderSection = styled.div`
 
   @media (max-width: 990px) {
     min-height: 100%;
+    
     margin: 20px 0;
   }
 `;
 
 export const StyledHeaderTextAndImage = styled.div`
   display: flex;
+    justify-content: space-between;
   width: 100%;
   height: 100%;
   position: relative;

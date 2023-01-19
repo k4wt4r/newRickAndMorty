@@ -6,6 +6,8 @@ export const StyledCardsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
 `;
 
 export const StyledCardsContainerInner = styled.div`
@@ -22,6 +24,10 @@ export const StyledCard = styled.div`
   background-color: #0f0f0f;
   z-index: 1;
   border-radius: 30px;
+
+    @media (max-width: 990px) {
+    height: 360px;
+    width: 100%;}
 `;
 
 export const StyledContainer = styled.div`
