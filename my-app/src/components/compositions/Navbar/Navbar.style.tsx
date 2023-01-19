@@ -129,7 +129,7 @@ export const StyledNavItems = styled.div`
     flex-direction: column;
     /* align-items: flex-start; */
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
   }
 `
 
